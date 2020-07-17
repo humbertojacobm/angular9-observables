@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {ReactiveFormsModule} from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,10 @@ import { E04MulticastingTechniqueTrueVersionComponent } from './e04-multicasting
 import { E01ObservableFromPromiseComponent } from './part02-rxjs/e01-observable-from-promise/e01-observable-from-promise.component';
 import { E02OperatorsComponent } from './part02-rxjs/e02-operators/e02-operators.component';
 import { E03ErrorHandlingComponent } from './part02-rxjs/e03-error-handling/e03-error-handling.component';
+import { E01AsyncPipeComponent } from './part03-observables-angular/e01-async-pipe/e01-async-pipe.component';
+import { E01ReactiveFormsComponent } from './part03-observables-angular/e01-reactive-forms/e01-reactive-forms.component';
+import { E01TypeAHeadComponent } from './part04-practical-observables/e01-type-a-head/e01-type-a-head.component';
+import { E02BackoffComponent } from './part04-practical-observables/e02-backoff/e02-backoff.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +25,16 @@ import { E03ErrorHandlingComponent } from './part02-rxjs/e03-error-handling/e03-
     E04MulticastingTechniqueTrueVersionComponent,
     E01ObservableFromPromiseComponent,
     E02OperatorsComponent,
-    E03ErrorHandlingComponent
+    E03ErrorHandlingComponent,
+    E01AsyncPipeComponent,
+    E01ReactiveFormsComponent,
+    E01TypeAHeadComponent,
+    E02BackoffComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
