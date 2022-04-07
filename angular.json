@@ -115,6 +115,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular9-Observables"
+    }
+  },
+  "defaultProject": "angular9-Observables",
+  "cli": {
+    "analytics": "1be54132-9e20-4951-b312-4182729dea3c"
+  }
 }
