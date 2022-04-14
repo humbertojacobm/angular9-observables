@@ -19,6 +19,7 @@ import { E01ExampleComponent } from './part05-myown/e01-example/e01-example.comp
 import { FlagService } from './flag.service';
 import { TodoListComponent } from './part05-myown/todo-list/todo-list.component';
 import { TodoAddComponent } from './part05-myown/todo-add/todo-add.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { TodoAddComponent } from './part05-myown/todo-add/todo-add.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NoopAnimationsModule
   ],
   providers: [FlagService],
   bootstrap: [AppComponent]

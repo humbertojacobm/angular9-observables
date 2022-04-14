@@ -1,7 +1,14 @@
 
-1. Requirement:
+1. (done)Requirement:
    As user I want to have a interface that allow me to add the names of my girlfriends in a collection.
     - note: user observable.
+
+https://medium.com/better-programming/when-to-use-rxjs-subject-behavioursubject-replaysubject-asyncsubject-or-void-subject-in-angular-c2e9db61b4a0
+
+2.  Requirement:
+  As user I want to hide the mat-tab if a variable in a fake service is enable.
+     - user observables.
+
 # Angular9Observables
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
