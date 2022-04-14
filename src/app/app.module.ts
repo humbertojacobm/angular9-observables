@@ -15,6 +15,10 @@ import { E01AsyncPipeComponent } from './part03-observables-angular/e01-async-pi
 import { E01ReactiveFormsComponent } from './part03-observables-angular/e01-reactive-forms/e01-reactive-forms.component';
 import { E01TypeAHeadComponent } from './part04-practical-observables/e01-type-a-head/e01-type-a-head.component';
 import { E02BackoffComponent } from './part04-practical-observables/e02-backoff/e02-backoff.component';
+import { E01ExampleComponent } from './part05-myown/e01-example/e01-example.component';
+import { FlagService } from './flag.service';
+import { TodoListComponent } from './part05-myown/todo-list/todo-list.component';
+import { TodoAddComponent } from './part05-myown/todo-add/todo-add.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +33,17 @@ import { E02BackoffComponent } from './part04-practical-observables/e02-backoff/
     E01AsyncPipeComponent,
     E01ReactiveFormsComponent,
     E01TypeAHeadComponent,
-    E02BackoffComponent
+    E02BackoffComponent,
+    E01ExampleComponent,
+    TodoListComponent,
+    TodoAddComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [FlagService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,7 @@
+
+1. Requirement:
+   As user I want to have a interface that allow me to add the names of my girlfriends in a collection.
+    - note: user observable.
 # Angular9Observables
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
