@@ -22,6 +22,7 @@ import { TodoAddComponent } from './part05-myown/todo-add/todo-add.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { E01FirstMaterialComponent } from './part06-angular-material/e01-first-material/e01-first-material.component';
+import { E02MattabComponent } from './part06-angular-material/e02-mattab/e02-mattab.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { E01FirstMaterialComponent } from './part06-angular-material/e01-first-m
     TodoListComponent,
     TodoAddComponent,
     E01FirstMaterialComponent,
+    E02MattabComponent,
   ],
   imports: [
     BrowserModule,
