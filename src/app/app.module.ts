@@ -20,6 +20,8 @@ import { FlagService } from './flag.service';
 import { TodoListComponent } from './part05-myown/todo-list/todo-list.component';
 import { TodoAddComponent } from './part05-myown/todo-add/todo-add.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { E01FirstMaterialComponent } from './part06-angular-material/e01-first-material/e01-first-material.component';
 
 @NgModule({
   declarations: [
@@ -37,13 +39,15 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     E02BackoffComponent,
     E01ExampleComponent,
     TodoListComponent,
-    TodoAddComponent
+    TodoAddComponent,
+    E01FirstMaterialComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatSliderModule
   ],
   providers: [FlagService],
   bootstrap: [AppComponent]
