@@ -22,6 +22,7 @@ import { TodoAddComponent } from './part05-myown/todo-add/todo-add.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
 import { E01FirstMaterialComponent } from './part06-angular-material/e01-first-material/e01-first-material.component';
 import { E02MattabComponent } from './part06-angular-material/e02-mattab/e02-mattab.component';
 
@@ -51,7 +52,8 @@ import { E02MattabComponent } from './part06-angular-material/e02-mattab/e02-mat
     ReactiveFormsModule,
     NoopAnimationsModule,
     MatSliderModule,
-    MatTabsModule
+    MatTabsModule,
+    MatIconModule
   ],
   providers: [FlagService],
   bootstrap: [AppComponent]
