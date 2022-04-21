@@ -5,9 +5,12 @@
 
 https://medium.com/better-programming/when-to-use-rxjs-subject-behavioursubject-replaysubject-asyncsubject-or-void-subject-in-angular-c2e9db61b4a0
 
-2.  Requirement:
+2. (done) Requirement:
   As user I want to hide the mat-tab if a variable in a fake service is enable.
      - user observables.
+
+3.  As admin user when the interface load, I want to mark the checkbox after 5 seconds automatically.
+   
 
 # Angular9Observables
 
