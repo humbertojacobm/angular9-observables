@@ -23,8 +23,10 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
 import { E01FirstMaterialComponent } from './part06-angular-material/e01-first-material/e01-first-material.component';
 import { E02MattabComponent } from './part06-angular-material/e02-mattab/e02-mattab.component';
+import { E03MatTableComponent } from './part06-angular-material/e03-mat-table/e03-mat-table.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,7 @@ import { E02MattabComponent } from './part06-angular-material/e02-mattab/e02-mat
     TodoAddComponent,
     E01FirstMaterialComponent,
     E02MattabComponent,
+    E03MatTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { E02MattabComponent } from './part06-angular-material/e02-mattab/e02-mat
     NoopAnimationsModule,
     MatSliderModule,
     MatTabsModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
   ],
   providers: [FlagService],
   bootstrap: [AppComponent]
