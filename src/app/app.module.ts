@@ -24,6 +24,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator'
 import { E01FirstMaterialComponent } from './part06-angular-material/e01-first-material/e01-first-material.component';
 import { E02MattabComponent } from './part06-angular-material/e02-mattab/e02-mattab.component';
 import { E03MatTableComponent } from './part06-angular-material/e03-mat-table/e03-mat-table.component';
@@ -57,7 +58,8 @@ import { E03MatTableComponent } from './part06-angular-material/e03-mat-table/e0
     MatSliderModule,
     MatTabsModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [FlagService],
   bootstrap: [AppComponent]
