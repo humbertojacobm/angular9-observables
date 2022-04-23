@@ -29,6 +29,7 @@ export class E06TableMatSortingChangeEventComponent implements OnInit, AfterView
     this.dataSource.paginator = this.paginator; //this is linking to elements
     this.dataSource.sort = this.sort;
     this.dataSource.sortingDataAccessor = this.customeSortingDataAccessor;
+    this.dataSource.filter = "";//you can use this as filter
   }
 
   announceSortChange(sortState: Sort){
