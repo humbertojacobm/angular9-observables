@@ -31,6 +31,7 @@ import { E02MattabComponent } from './part06-angular-material/e02-mattab/e02-mat
 import { E03MatTableComponent } from './part06-angular-material/e03-mat-table/e03-mat-table.component';
 import { E05TableSortingDataAccesorComponent } from './part06-angular-material/e05-table-sorting-data-accesor/e05-table-sorting-data-accesor.component';
 import { E06TableMatSortingChangeEventComponent } from './part06-angular-material/e06-table-mat-sorting-change-event/e06-table-mat-sorting-change-event.component';
+import { E07TableFilterSearchComponent } from './part06-angular-material/e07-table-filter-search/e07-table-filter-search.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { E06TableMatSortingChangeEventComponent } from './part06-angular-materia
     E03MatTableComponent,
     E05TableSortingDataAccesorComponent,
     E06TableMatSortingChangeEventComponent,
+    E07TableFilterSearchComponent,
   ],
   imports: [
     BrowserModule,
