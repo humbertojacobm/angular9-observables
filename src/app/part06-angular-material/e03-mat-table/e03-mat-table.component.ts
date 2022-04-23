@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ELEMENT_DATA } from './Data';
 import { PeriodicElement } from './PeriodicElement.Model';
@@ -15,6 +16,7 @@ export class E03MatTableComponent implements OnInit, AfterViewInit {
   dataSource =  new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   constructor() { }
 
@@ -23,6 +25,7 @@ export class E03MatTableComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.dataSource.paginator = this.paginator; //this is linking to elements
+    this.dataSource.sort = this.sort;
   }
 
 }
