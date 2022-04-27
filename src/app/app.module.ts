@@ -38,6 +38,7 @@ import { E06TableMatSortingChangeEventComponent } from './part06-angular-materia
 import { E07TableFilterSearchComponent } from './part06-angular-material/e07-table-filter-search/e07-table-filter-search.component';
 import { environment } from 'src/environments/environment';
 import { E01FirebaseComponent } from './part07-angular-firebase/e01-firebase/e01-firebase.component';
+import { E02FilterFirebaseComponent } from './part07-angular-firebase/e02-filter-firebase/e02-filter-firebase.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { E01FirebaseComponent } from './part07-angular-firebase/e01-firebase/e01
     E06TableMatSortingChangeEventComponent,
     E07TableFilterSearchComponent,
     E01FirebaseComponent,
+    E02FilterFirebaseComponent,
   ],
   imports: [
     BrowserModule,
