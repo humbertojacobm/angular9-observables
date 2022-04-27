@@ -55,4 +55,8 @@ export class E07TableFilterSearchComponent implements OnInit, AfterViewInit {
       return data[sortHeaderId];
     }
   }
+
+  onSubmit(){
+    console.info("humberto",this.filterForm.value);
+  }
 }

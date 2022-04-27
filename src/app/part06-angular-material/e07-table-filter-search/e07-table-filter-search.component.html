@@ -1,6 +1,9 @@
 <p>e07-table-filter-search works!</p>
 <div>
-    <form [formGroup]="filterForm">
+    <form 
+        [formGroup]="filterForm"
+        (ngSubmit)="onSubmit()"
+    >
         <mat-form-field appearance="fill">
             <mat-label>Filter</mat-label>
             <input 
@@ -9,6 +12,10 @@
                 value="Hy"
                 formControlName="filter">
         </mat-form-field>
+        <button 
+            mat-button 
+            color="primary" 
+            type="submit">Search</button>
     </form>
 </div>
 <div>
