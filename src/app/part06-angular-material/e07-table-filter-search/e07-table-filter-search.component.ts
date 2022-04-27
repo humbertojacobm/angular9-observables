@@ -3,7 +3,7 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { ELEMENT_DATA } from './Data';
 import { PeriodicElement } from './PeriodicElement.Model';
 
@@ -56,7 +56,7 @@ export class E07TableFilterSearchComponent implements OnInit, AfterViewInit {
     }
   }
 
-  onSubmit(){
-    console.info("humberto",this.filterForm.value);
+  onSubmit(){    
+    this.dataSource.filter= (this.filterForm.get("filter") as FormControl).value;
   }
 }
