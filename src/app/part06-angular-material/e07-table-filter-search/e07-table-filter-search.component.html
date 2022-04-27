@@ -1,5 +1,17 @@
 <p>e07-table-filter-search works!</p>
 <div>
+    <form [formGroup]="filterForm">
+        <mat-form-field appearance="fill">
+            <mat-label>Filter</mat-label>
+            <input 
+                matInput 
+                placeholder="Hy" 
+                value="Hy"
+                formControlName="filter">
+        </mat-form-field>
+    </form>
+</div>
+<div>
     <table
     mat-table
     [dataSource]="dataSource"

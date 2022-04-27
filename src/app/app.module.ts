@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms'
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { E01CreateMyObservableComponent } from './e01-create-my-observable/e01-create-my-observable.component';
@@ -26,6 +25,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator'
 import {MatSortModule} from '@angular/material/sort';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { E01FirstMaterialComponent } from './part06-angular-material/e01-first-material/e01-first-material.component';
 import { E02MattabComponent } from './part06-angular-material/e02-mattab/e02-mattab.component';
 import { E03MatTableComponent } from './part06-angular-material/e03-mat-table/e03-mat-table.component';
@@ -67,7 +69,10 @@ import { E07TableFilterSearchComponent } from './part06-angular-material/e07-tab
     MatIconModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [FlagService],
   bootstrap: [AppComponent]

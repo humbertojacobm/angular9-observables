@@ -3,6 +3,7 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { ELEMENT_DATA } from './Data';
 import { PeriodicElement } from './PeriodicElement.Model';
 
@@ -19,10 +20,17 @@ export class E07TableFilterSearchComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
+  filterForm: FormGroup;
 
-  constructor(private _liveAnnouncer: LiveAnnouncer) { }
+  constructor(
+    private _liveAnnouncer: LiveAnnouncer,
+    private fb: FormBuilder
+    ) { }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {   
+    this.filterForm = this.fb.group({
+      filter: [""]
+    });
   }
 
   ngAfterViewInit(): void {
