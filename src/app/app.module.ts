@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms'
+import { AngularFireModule } from '@angular/fire';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { E01CreateMyObservableComponent } from './e01-create-my-observable/e01-create-my-observable.component';
@@ -34,6 +35,7 @@ import { E03MatTableComponent } from './part06-angular-material/e03-mat-table/e0
 import { E05TableSortingDataAccesorComponent } from './part06-angular-material/e05-table-sorting-data-accesor/e05-table-sorting-data-accesor.component';
 import { E06TableMatSortingChangeEventComponent } from './part06-angular-material/e06-table-mat-sorting-change-event/e06-table-mat-sorting-change-event.component';
 import { E07TableFilterSearchComponent } from './part06-angular-material/e07-table-filter-search/e07-table-filter-search.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,8 @@ import { E07TableFilterSearchComponent } from './part06-angular-material/e07-tab
     MatSortModule,
     MatButtonModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [FlagService],
   bootstrap: [AppComponent]
