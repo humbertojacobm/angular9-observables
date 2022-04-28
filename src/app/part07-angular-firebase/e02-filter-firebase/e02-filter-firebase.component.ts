@@ -5,6 +5,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort, Sort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { ELEMENT_DATA } from './Data';
+import { PeriodicElementService } from './periodic-element.service';
 
 import { PeriodicElement } from './PeriodicElement.Model';
 
@@ -16,7 +17,7 @@ import { PeriodicElement } from './PeriodicElement.Model';
 export class E02FilterFirebaseComponent implements OnInit, AfterViewInit {
 
   displayedColumns: string[] = ['position','name','weight','symbol'];
-  dataSource =  new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  dataSource =  new MatTableDataSource<PeriodicElement>();
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
@@ -25,10 +26,14 @@ export class E02FilterFirebaseComponent implements OnInit, AfterViewInit {
 
   constructor(
     private _liveAnnouncer: LiveAnnouncer,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private periodicElementService: PeriodicElementService
     ) { }
 
   ngOnInit(): void {   
+    this.periodicElementService.getElements().subscribe((response) => {
+      this.dataSource.data = response;
+    });
     this.filterForm = this.fb.group({
       filter: [""]
     });
