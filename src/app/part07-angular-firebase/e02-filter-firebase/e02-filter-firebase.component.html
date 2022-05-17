@@ -1,0 +1,71 @@
+<p>e02-filter-firebase works!</p>
+<div>
+    <form 
+        [formGroup]="filterForm"
+        (ngSubmit)="onSubmit()"
+    >
+        <mat-form-field appearance="fill">
+            <mat-label>Filter</mat-label>
+            <input 
+                matInput 
+                placeholder="Hy" 
+                value="Hy"
+                formControlName="filter">
+        </mat-form-field>
+        <button 
+            mat-button 
+            color="primary" 
+            type="submit">Search</button>
+    </form>
+</div>
+<div>
+    <table
+    mat-table
+    [dataSource]="dataSource"
+    class="mat-elevation-z8"
+    matSort
+    (matSortChange)="announceSortChange($event)"
+    >
+        <ng-container matColumnDef="position">
+            <th 
+                mat-header-cell 
+                *matHeaderCellDef
+                mat-sort-header
+            >No.</th>
+            <td mat-cell *matCellDef="let element">{{element.position}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+            <th 
+                mat-header-cell 
+                *matHeaderCellDef
+                mat-sort-header>namex</th>
+            <td mat-cell *matCellDef="let element">{{element.name}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="weight">
+            <th 
+                mat-header-cell 
+                *matHeaderCellDef
+                mat-sort-header>weight</th>
+            <td mat-cell *matCellDef="let element">{{element.weightxx}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="symbol">
+            <th 
+                mat-header-cell 
+                *matHeaderCellDef
+                mat-sort-header>symbol</th>
+            <td mat-cell *matCellDef="let element">{{element.symbol}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator
+        [pageSizeOptions]="[5,10,25,100]"
+        aria-label="Select page"
+        showFirstLastButtons
+    >
+    </mat-paginator>
+</div>
